@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailMovieActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_backdrop_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cropToPadding="true"
+            tools:src="@drawable/backdrop_sample"/>
+
+        <include layout="@layout/appbar_transparent"/>
+
+        <LinearLayout
+            android:id="@+id/component_rating"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-35dp"
+            android:layout_marginEnd="-50dp"
+            android:background="@drawable/rounded_corners"
+            android:elevation="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_below="@id/iv_backdrop_path">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="@dimen/dimen_horizontal"
+                android:src="@drawable/ic_star_black_24dp"
+                android:contentDescription="@string/txt_star_rating" />
+
+            <TextView
+                android:id="@+id/tv_vote_average"
+                style="@style/TextContent.TextTitle"
+                android:layout_marginTop="0dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/txt_rating" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextContent.TextTitle"
+            android:id="@+id/tv_title"
+            android:layout_below="@id/component_rating"
+            android:textSize="26sp"
+            android:text="@string/txt_title"/>
+
+        <TextView
+            style="@style/TextContent.TextThumb"
+            android:layout_width="match_parent"
+            android:id="@+id/tv_release_date"
+            android:layout_below="@id/tv_title"
+            android:paddingBottom="@dimen/dimen_vertical"
+            android:background="@drawable/border_bottom"
+            android:text="@string/txt_date"/>
+
+        <TextView
+            style="@style/TextContent.TextTitle"
+            android:id="@+id/tv_plot_summary"
+            android:layout_below="@id/tv_release_date"
+            android:text="@string/txt_plot_summary"/>
+
+        <TextView
+            style="@style/TextContent.TextDesc"
+            android:id="@+id/tv_overview"
+            android:layout_width="match_parent"
+            android:layout_below="@id/tv_plot_summary"
+            android:paddingBottom="@dimen/dimen_vertical"
+            android:background="@drawable/border_bottom"
+            android:text="@string/txt_overview"/>
+
+        <TextView
+            style="@style/TextContent.TextTitle"
+            android:id="@+id/tv_schedule"
+            android:layout_below="@id/tv_overview"
+            android:text="@string/txt_schedule"/>
+
+        <TextView
+            style="@style/TextContent.TextThumb"
+            android:id="@+id/tv_date_now"
+            android:layout_below="@id/tv_schedule"
+            android:textAlignment="textEnd"
+            android:text="@string/txt_month"/>
+
+        <RadioGroup
+            android:id="@+id/rg_date"
+            style="@style/RadioGroups"
+            android:layout_below="@id/tv_date_now"
+            android:background="@drawable/border_bottom">
+
+           <RadioButton
+               style="@style/ButtonSelection.Date"
+               android:id="@+id/rb_date_1"
+               android:text="@string/txt_date_now"/>
+
+            <RadioButton
+                style="@style/ButtonSelection.Date"
+                android:id="@+id/rb_date_2"
+                android:text="@string/txt_date_now"/>
+
+            <RadioButton
+                style="@style/ButtonSelection.Date"
+                android:id="@+id/rb_date_3"
+                android:text="@string/txt_date_now"/>
+
+            <RadioButton
+                style="@style/ButtonSelection.Date"
+                android:id="@+id/rb_date_4"
+                android:text="@string/txt_date_now"/>
+
+            <RadioButton
+                style="@style/ButtonSelection.Date"
+                android:id="@+id/rb_date_5"
+                android:text="@string/txt_date_now"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/TextContent.TextTitle"
+            android:id="@+id/tv_showtimes"
+            android:layout_below="@id/rg_date"
+            android:text="@string/txt_showtimes"/>
+
+        <TextView
+            android:id="@+id/tv_studio"
+            style="@style/TextContent.TextThumb"
+            android:layout_below="@id/tv_showtimes"
+            android:textStyle="bold"
+            android:text="@string/txt_studio"/>
+
+        <TextView
+            style="@style/TextContent.TextThumb"
+            android:text="@string/txt_price"
+            android:layout_below="@id/tv_showtimes"
+            android:layout_toEndOf="@id/tv_studio"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"/>
+
+        <RadioGroup
+            android:id="@+id/rg_time"
+            style="@style/RadioGroups"
+            android:layout_below="@id/tv_studio"
+            android:background="@drawable/border_bottom">
+
+                <RadioButton
+                    style="@style/ButtonSelection.Time"
+                    android:id="@+id/rb_time_1"
+                    android:text="10:00"/>
+
+                <RadioButton
+                    style="@style/ButtonSelection.Time"
+                    android:id="@+id/rb_time_2"
+                    android:text="13:00"/>
+
+                <RadioButton
+                    style="@style/ButtonSelection.Time"
+                    android:id="@+id/rb_time_3"
+                    android:text="15:30"/>
+
+                <RadioButton
+                    style="@style/ButtonSelection.Time"
+                    android:id="@+id/rb_time_4"
+                    android:text="18:30"/>
+
+                <RadioButton
+                    style="@style/ButtonSelection.Time"
+                    android:id="@+id/rb_time_5"
+                    android:text="23:00"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_buy"
+            style="@style/ButtonLarge"
+            android:text="@string/txt_buy_ticket"
+            android:layout_below="@id/rg_time"/>
+
+    </RelativeLayout>
+</ScrollView>
