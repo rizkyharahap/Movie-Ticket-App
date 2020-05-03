@@ -1,11 +1,110 @@
 <resources>
-
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/quicksand</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+    </style>
+
+    <style name="TextContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dimen_horizontal</item>
+        <item name="android:paddingRight">@dimen/dimen_horizontal</item>
+    </style>
+
+    <style name="TextContent.TextTitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+        <item name="android:layout_marginTop">@dimen/dimen_vertical</item>
+    </style>
+
+    <style name="TextContent.TextThumb">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextContent.TextDesc">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+
+    <style name="TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/dimen_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_vertical</item>
+    </style>
+   
+    <style name="TextInputEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawablePadding">@dimen/dimen_horizontal</item>
+        <item name="backgroundTint">@android:color/white</item>
+    </style>
+    
+    <style name="RadioGroups">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/dimen_horizontal</item>
+        <item name="android:paddingRight">@dimen/dimen_horizontal</item>
+        <item name="android:paddingBottom">@dimen/dimen_horizontal</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="ButtonLarge" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginHorizontal">@dimen/dimen_horizontal</item>
+        <item name="android:layout_marginVertical">@dimen/dimen_horizontal</item>
+    </style>
+
+    <style name="ButtonText" parent="TextContent.TextThumb">
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@color/colorLink</item>
+    </style>
+    
+    <style name="ButtonSelection">
+        <item name="android:layout_marginRight">@dimen/dimen_vertical</item>
+        <item name="android:layout_marginTop">@dimen/dimen_vertical</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+        <item name="android:background">@drawable/radio_button_selector</item>
+    </style>
+
+    <style name="ButtonSelection.Date">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:onClick">onDateSelection</item>
+    </style>
+
+    <style name="ButtonSelection.Time">
+        <item name="android:layout_width">55dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:onClick">onTimeSelection</item>
+    </style>
+
+    <style name="ButtonSelection.Seat">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+    <style name="BorderBottom">
+        <item name="android:paddingBottom">@dimen/dimen_horizontal</item>
+        <item name="android:background">@drawable/border_bottom</item>
     </style>
 
 </resources>

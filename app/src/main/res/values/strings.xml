@@ -1,6 +1,107 @@
 <resources>
     <string name="app_name">Movie Ticket App</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="tab_now_playing">Now Playing</string>
+    <string name="tab_upcomming">Upcomming</string>
+    <string name="txt_now_playing">Now Playing</string>
+    <string name="txt_upcoming">Upcoming</string>
+    <string name="txt_ticket">Avaible Tickets</string>
+    <string name="txt_title">Title</string>
+    <string name="txt_thumb_date">Date</string>
+    <string name="txt_date">28 April</string>
+    <string name="txt_thumb_studio">Studio</string>
+    <string name="txt_studio">Regular 2D</string>
+    <string name="txt_thumb_time">Time</string>
+    <string name="txt_time">10:00</string>
+    <string name="txt_logo">Logo Movie Ticket</string>
+    <string name="txt_thumb_seat">Seat</string>
+    <string name="txt_seat">C3, C2, C4</string>
+    <string name="txt_qr_code">Qr Code</string>
+    <string name="txt_star_rating">Star Rating</string>
+    <string name="txt_rating">8.2</string>
+    <string name="txt_profile_picture">profile_picture</string>
+    <string name="txt_profile_name">Profile Name</string>
+    <string name="txt_email">username@gmail.com</string>
+    <string name="txt_thumb_ticket">Ticket</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_plot_summary">Plot Summary</string>
+    <string name="txt_overview">Overview</string>
+    <string name="txt_schedule">Schedule</string>
+    <string name="txt_month">Month</string>
+    <string name="txt_date_now">08</string>
+    <string name="txt_showtimes">Showtimes</string>
+    <string name="txt_price">IDR.50.000</string>
+    <string name="txt_buy_ticket">Buy Ticket</string>
+    <string name="txt_screen">Screen</string>
+    <string name="txt_total_price">Total Price</string>
+    <string name="txt_password">Password</string>
+    <string name="txt_create_new_account">Create new Account</string>
+    <string name="txt_sign_in">SIGN IN</string>
+    <string name="txt_first_name">First Name</string>
+    <string name="txt_last_name">Last Name</string>
+    <string name="txt_sign_up">SIGN UP</string>
+    <string name="txt_back_to_login">Back to Login</string>
+    <string name="txt_profile">Profile</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_branded">Choose your best movie</string>
+    <string name="txt_search_results">Search Results</string>
+
+    <string-array name="seatName">
+        <item>A1</item>
+        <item>A2</item>
+        <item>A3</item>
+        <item>A4</item>
+        <item>A5</item>
+        <item>A6</item>
+        <item>A7</item>
+        <item>A8</item>
+        <item>B1</item>
+        <item>B2</item>
+        <item>B3</item>
+        <item>B4</item>
+        <item>B5</item>
+        <item>B6</item>
+        <item>B7</item>
+        <item>B8</item>
+        <item>C1</item>
+        <item>C2</item>
+        <item>C3</item>
+        <item>C4</item>
+        <item>C5</item>
+        <item>C6</item>
+        <item>C7</item>
+        <item>C8</item>
+        <item>D1</item>
+        <item>D2</item>
+        <item>D3</item>
+        <item>D4</item>
+        <item>D5</item>
+        <item>D6</item>
+        <item>D7</item>
+        <item>D8</item>
+        <item>E1</item>
+        <item>E2</item>
+        <item>E3</item>
+        <item>E4</item>
+        <item>E5</item>
+        <item>E6</item>
+        <item>E7</item>
+        <item>E8</item>
+        <item>F1</item>
+        <item>F2</item>
+        <item>F3</item>
+        <item>F4</item>
+        <item>F5</item>
+        <item>F6</item>
+        <item>F7</item>
+        <item>F8</item>
+        <item>G1</item>
+        <item>G2</item>
+        <item>G3</item>
+        <item>G4</item>
+        <item>G5</item>
+        <item>G6</item>
+        <item>G7</item>
+        <item>G8</item>
+    </string-array>
 </resources>

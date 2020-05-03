@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/iv_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/profile_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/txt_profile_picture" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/TextContent.TextTitle"
+        android:layout_marginTop="24dp"
+        android:text="@string/txt_profile_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile_image" />
+
+    <TextView
+        android:id="@+id/tv_email"
+        style="@style/TextContent.TextDesc"
+        android:layout_width="match_parent"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_bottom"
+        android:paddingVertical="20dp"
+        android:text="@string/txt_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_ticket"
+        style="@style/TextContent.TextDesc"
+        android:layout_width="match_parent"
+        android:background="@drawable/border_bottom"
+        android:paddingVertical="20dp"
+        android:text="@string/txt_thumb_ticket"
+        app:layout_constraintEnd_toEndOf="@+id/tv_email"
+        app:layout_constraintStart_toStartOf="@+id/tv_email"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+    <TextView
+        android:id="@+id/tv_logout"
+        style="@style/TextContent.TextDesc"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_logout"
+        android:textStyle="bold"
+        android:textColor="@color/colorLink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ticket" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
